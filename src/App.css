@@ -1,0 +1,92 @@
+/*React Stock*/
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*FileDrop*/
+
+.filedrop {
+    margin: 20px auto 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed rgb(102, 102, 102);
+    border-radius: 5px;
+}
+
+/*Custom*/
+
+.msgport {
+    padding-top: 100px;
+    width: 200px;
+    text-align: left;
+}
+
+.workingimg {
+    padding: 0;
+    float: left;
+}
+
+.user-message-text {
+    font-family: "Courier New";
+}
+
+.sampleimage {
+    max-width: 450px;
+}
+
+.container {
+    height: 150px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 40px;
+    color: #333;
+    background: #419be0;
+}
+
+/*Raphael*/
+
+#title {
+    font-weight: bold;
+    height: 24px;
+}
+
+#dispimage {
+    width: auto;
+}
+
+#wrapper {
+    position: relative;
+    padding: 0;
+}
+#wrapper img {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+#canvas {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
