@@ -1,11 +1,11 @@
-Requirements:
+### Requirements:
 
-node 6+
-yarn
-github.com/keatingr/facr and running that flask app (app.py) as API back-end
+- node 6+
+- yarn
+- github.com/keatingr/facr and running that flask app (app.py) as API back-end
 
-Instructions:
+### Instructions:
 
-yarn
-yarn start
-the front end will then talk to facr
+- yarn
+- yarn start
+- the front end will then talk to facr back-end
