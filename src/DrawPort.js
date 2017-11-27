@@ -8,16 +8,15 @@ class DrawPort extends React.Component {
             dispimage: {}
         };
     }
-    drawBox(gender, fb, age, gaze) {
+    drawBox(fb) {
         let DrawPort = this;
-        gender === "male" ? this.stereotype = "#1c5de1" : this.stereotype = "#ff64c2";
+        this.stereotype = "#4eff61";
         let box = DrawPort.R.rect(fb.x, fb.y, fb.width, fb.height);
         box.attr({
             fill: this.stereotype,
             stroke: this.stereotype,
             opacity: 0.3,
             cursor: 'pointer',
-            // title: "age: " + age + "\nlooking at camera: " + gaze + "\nx, y, width, height: " + fb.x + ", " + fb.y + ", " + fb.width + ", " + fb.height
             title: "x, y, width, height: " + fb.x + ", " + fb.y + ", " + fb.width + ", " + fb.height
         });
         box.glow({color: this.stereotype, width: 10});
@@ -30,12 +29,12 @@ class DrawPort extends React.Component {
         let BASE_TEN = 10;
         if (this.props.boxes && this.props.boxes.length > 0) {
             this.props.boxes.forEach((box) => {
-                this.drawBox(box.gender, {
+                this.drawBox({
                     x: parseInt(box.x, BASE_TEN),
                     y: parseInt(box.y, BASE_TEN),
                     width: parseInt(box.width, BASE_TEN),
                     height: parseInt(box.height, BASE_TEN)
-                }, box.age, box.gaze)
+                })
             });
         }
         else {
