@@ -8,4 +8,4 @@
 
 - yarn
 - yarn start
-- the front end will then talk to facr back-end
+- the front end will then talk to back-end
